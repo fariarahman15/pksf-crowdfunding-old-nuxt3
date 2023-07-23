@@ -73,16 +73,16 @@ export default defineNuxtConfig({
           type: "text/css",
           href: "plugins/fontawesome-free/css/all.min.css",
         },
-        {
-          rel: "stylesheet",
-          type: "text/css",
-          href: "plugins/icheck-bootstrap/icheck-bootstrap.min.css",
-        },
-        {
-          rel: "stylesheet",
-          type: "text/css",
-          href: "dist/css/adminlte.min.css",
-        },
+        // {
+        //   rel: "stylesheet",
+        //   type: "text/css",
+        //   href: "plugins/icheck-bootstrap/icheck-bootstrap.min.css",
+        // },
+        // {
+        //   rel: "stylesheet",
+        //   type: "text/css",
+        //   href: "dist/css/adminlte.min.css",
+        // },
       ],
     },
   },

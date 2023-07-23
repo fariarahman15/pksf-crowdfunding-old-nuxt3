@@ -1,4 +1,19 @@
 <script setup lang="js">
+useHead({
+
+  link: [
+    {
+      rel: "stylesheet",
+      type: "text/css",
+      href: "plugins/icheck-bootstrap/icheck-bootstrap.min.css",
+    },
+    {
+      rel: "stylesheet",
+      type: "text/css",
+      href: "dist/css/adminlte.min.css",
+    },
+  ],
+});
 const preloader = ref(true);
 onMounted(() => {
   setTimeout(() => {
@@ -24,7 +39,7 @@ const {
       <common-header></common-header>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
-      <slot />
+        <slot />
       </div>
       <!-- /.content-wrapper -->
       <common-footer></common-footer>
