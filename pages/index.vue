@@ -3,5 +3,6 @@
     <LandingPageNavbar />
     <LandingPageBanner />
     <LandingPageBannerTwo />
+    <LandingPageCardGroup />
   </div>
 </template>
