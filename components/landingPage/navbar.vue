@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="navbar bg-[#DEF4FF]">
-      <div class="navbar-start">
+    <div class="bg-secondaryBase">
+      <div class="">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
             <svg
