@@ -14,6 +14,8 @@ useHead({
     },
   ],
 });
+
+
 const preloader = ref(true);
 onMounted(() => {
   setTimeout(() => {

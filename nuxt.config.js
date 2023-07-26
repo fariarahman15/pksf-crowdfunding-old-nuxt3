@@ -52,8 +52,8 @@ export default defineNuxtConfig({
       ],
       script: [
         { src: "/plugins/jquery/jquery.min.js" },
-        { src: "/plugins/bootstrap/js/bootstrap.bundle.min.js" },
-        { src: "/dist/js/adminlte.min.js" },
+        // { src: "/plugins/bootstrap/js/bootstrap.bundle.min.js" },
+        // { src: "/dist/js/adminlte.min.js" },
       ],
 
       link: [

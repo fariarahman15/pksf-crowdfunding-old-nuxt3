@@ -32,23 +32,6 @@ const [email, password] = useFieldModel(["email", "password"]);
 const borderDanger = ref("");
 const loginFailed = ref(false);
 
-useHead({
-  title: "Login | Admin Panel ",
-
-  link: [
-    {
-      rel: "stylesheet",
-      type: "text/css",
-      href: "plugins/icheck-bootstrap/icheck-bootstrap.min.css",
-    },
-    {
-      rel: "stylesheet",
-      type: "text/css",
-      href: "dist/css/adminlte.min.css",
-    },
-  ],
-});
-
 definePageMeta({
   layout: "auth",
 });
