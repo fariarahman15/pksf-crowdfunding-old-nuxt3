@@ -52,8 +52,8 @@ export default defineNuxtConfig({
       ],
       script: [
         { src: "/plugins/jquery/jquery.min.js" },
-        { src: "/plugins/bootstrap/js/bootstrap.bundle.min.js" },
-        { src: "/dist/js/adminlte.min.js" },
+        // { src: "/plugins/bootstrap/js/bootstrap.bundle.min.js" },
+        // { src: "/dist/js/adminlte.min.js" },
       ],
 
       link: [
@@ -73,16 +73,16 @@ export default defineNuxtConfig({
           type: "text/css",
           href: "plugins/fontawesome-free/css/all.min.css",
         },
-        {
-          rel: "stylesheet",
-          type: "text/css",
-          href: "plugins/icheck-bootstrap/icheck-bootstrap.min.css",
-        },
-        {
-          rel: "stylesheet",
-          type: "text/css",
-          href: "dist/css/adminlte.min.css",
-        },
+        // {
+        //   rel: "stylesheet",
+        //   type: "text/css",
+        //   href: "plugins/icheck-bootstrap/icheck-bootstrap.min.css",
+        // },
+        // {
+        //   rel: "stylesheet",
+        //   type: "text/css",
+        //   href: "dist/css/adminlte.min.css",
+        // },
       ],
     },
   },

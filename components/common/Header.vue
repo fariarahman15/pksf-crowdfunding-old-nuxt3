@@ -1,13 +1,30 @@
-<script setup lang="js">
-import {useAuthStore} from "../../stores/auth";
+<script>
+useHead({
+  link: [
+    {
+      rel: "stylesheet",
+      type: "text/css",
+      href: "plugins/icheck-bootstrap/icheck-bootstrap.min.css",
+    },
+    {
+      rel: "stylesheet",
+      type: "text/css",
+      href: "dist/css/adminlte.min.css",
+    },
+  ],
+});
 </script>
 
 <template>
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-      <img src="/images/vumi_logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
+      <img
+        src="/images/vumi_logo.png"
+        alt="AdminLTE Logo"
+        class="brand-image img-circle elevation-3"
+        style="opacity: 0.8"
+      />
       <span class="brand-text font-weight-light">bhumipedia</span>
     </a>
     <!-- Sidebar -->
@@ -15,7 +32,11 @@ import {useAuthStore} from "../../stores/auth";
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="/images/vumi_logo.png" class="img-circle elevation-2" alt="User Image">
+          <img
+            src="/images/vumi_logo.png"
+            class="img-circle elevation-2"
+            alt="User Image"
+          />
         </div>
         <div class="info" v-if="useAuthStore().isAuthenticated">
           <a href="#" class="d-block">{{ useAuthStore().user.name }}</a>
@@ -36,7 +57,12 @@ import {useAuthStore} from "../../stores/auth";
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <ul
+          class="nav nav-pills nav-sidebar flex-column"
+          data-widget="treeview"
+          role="menu"
+          data-accordion="false"
+        >
           <li class="nav-item">
             <nuxt-link to="/dashboard" class="nav-link">
               <i class="nav-icon fas fa-file"></i>
@@ -87,6 +113,4 @@ import {useAuthStore} from "../../stores/auth";
   </aside>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
