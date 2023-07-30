@@ -1,20 +1,10 @@
 <template>
   <div>
     <LandingPageNavbar />
-
-    <div>
-      <CommonBaseButton
-        :noPadding="true"
-        :noShadow="false"
-        :bold="false"
-        :locked="false"
-        rounded="rounded-lg"
-        :backgroundColor="'secondaryBase'"
-        @click="handleButtonClick"
-      >
-        Click Me!
-      </CommonBaseButton>
-    </div>
+    <LandingPageBanner />
+    <LandingPageBannerTwo />
+    <LandingPageCardGroup />
+    <LandingPageCardGroup2 />
   </div>
 </template>
 

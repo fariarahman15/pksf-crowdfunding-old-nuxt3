@@ -1,13 +1,12 @@
 <template>
-  <div class="px-16 py-12">
-    <div class="bg-[#DEF4FF] px-6 py-9 rounded-[20px] border">
-      <div
-        class="flex-col flex lg:flex-row gap-10 items-center justify-between max-h-[400px]"
-      >
-        <div class="w-[50%] px-9">
-          <h1 class="text-4xl text-[#034E6F] font-semibold mb-3">
-            Exploring Innovative Funding Ideas
+  <div class="px-6 py-8">
+    <div class="bg-secondary rounded-[20px] border mx-12">
+      <section class="grid grid-cols-2 px-12 py-12 items-center">
+        <div class="w-[90%]">
+          <h1 class="text-[40px] text-primary font-semibold mb-3">
+            See how the platform works
           </h1>
+
           <p class="text-[24px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
             ab odio labore accusamus repellat et quaerat dolorum beatae ipsa
@@ -17,7 +16,8 @@
             veniam impedit tenetur quas!
           </p>
         </div>
-        <div class="w-[50%] p-2">
+
+        <div>
           <iframe
             class="rounded-md w-full h-[350px]"
             src="https://www.youtube.com/embed/-yhtVSW65Ag"
@@ -27,7 +27,7 @@
             allowfullscreen
           ></iframe>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </template>

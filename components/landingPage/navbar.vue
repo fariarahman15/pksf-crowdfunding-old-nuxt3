@@ -1,37 +1,20 @@
 <template>
   <div>
-    <div class="bg-secondaryBase">
-      <div class="">
+    <div class="bg-secondary flex justify-between px-6 py-1">
+      <div class="w-[50%] flex items-center">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+            <i class="fa-solid fa-bars"></i>
           </label>
           <ul
             tabindex="0"
             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li><a>Item 1</a></li>
+            <li><a>About us</a></li>
             <li>
-              <a>Parent</a>
-              <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
+              <a>How it works</a>
             </li>
-            <li><a>Item 3</a></li>
+            <li><a>Projects</a></li>
           </ul>
         </div>
         <a class="normal-case text-xl cursor-pointer"
@@ -39,8 +22,8 @@
         /></a>
       </div>
 
-      <div class="w-[30%] flex justify-end lg:justify-between gap-5">
-        <div class="hidden lg:flex items-center">
+      <div class="w-[50%] flex justify-end lg:justify-between gap-5">
+        <div class="hidden lg:flex items-center space-x-10">
           <a class="link link-hover p-2">About us</a>
           <a class="link link-hover p-2">How it works</a>
           <a class="link link-hover p-2">Projects</a>
@@ -52,7 +35,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="flex items-center">
           <a href="" class="link link-hover p-2">Login</a>
           <div class="dropdown dropdown-end">
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -81,3 +64,20 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  name: "NavBar",
+  props: {
+    padding: { type: Boolean, default: false },
+    shadow: { type: Boolean, default: false },
+    bold: { type: Boolean, default: true },
+    rounded: { type: String, default: "rounded " },
+    bg: { type: String, default: "" },
+  },
+  computed: {
+    bgClass() {
+      return this.bg ? `bg-${this.bg}` : "";
+    },
+  },
+};
+</script>

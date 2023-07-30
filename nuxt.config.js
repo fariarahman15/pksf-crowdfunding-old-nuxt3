@@ -52,6 +52,9 @@ export default defineNuxtConfig({
       ],
       script: [
         { src: "/plugins/jquery/jquery.min.js" },
+        {
+          src: "https://kit.fontawesome.com/3d8ddcb68c.js",
+        },
         // { src: "/plugins/bootstrap/js/bootstrap.bundle.min.js" },
         // { src: "/dist/js/adminlte.min.js" },
       ],
