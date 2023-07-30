@@ -1,6 +1,7 @@
 <template>
   <div>
     <LandingPageNavbar />
+    <LandingPageJumbotron />
     <LandingPageBanner />
     <LandingPageBannerTwo />
     <LandingPageCardGroup />
