@@ -1,6 +1,6 @@
 <template>
   <div class="px-6">
-    <div class="px-12">
+    <div class="px-6">
       <div class="flex items-center justify-between mb-4">
         <h5 class="text-[30px] font-semibold leading-none text-primary">
           To Whom You May Invest?

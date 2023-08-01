@@ -1,8 +1,8 @@
 <template>
-  <div class="px-6 bg-primary">
-    <section class="grid grid-cols-2 px-12 py-12 items-center">
+  <CommonContainer bg="primary" class="py-8"
+    ><section class="grid grid-cols-2 px-6 items-center">
       <div class="w-[70%]">
-        <h1 class="text-[48px] text-white font-semibold mb-3">
+        <h1 class="text-[44px] text-white font-semibold mb-3">
           Exploring Innovative Funding Ideas
         </h1>
 
@@ -29,5 +29,5 @@
         />
       </div>
     </section>
-  </div>
+  </CommonContainer>
 </template>

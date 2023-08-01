@@ -1,6 +1,6 @@
 <template>
   <div class="px-6 bg-secondary mt-8">
-    <div class="px-12 py-8">
+    <div class="px-6 py-8">
       <div class="flex items-center justify-between mb-4">
         <h5 class="text-[30px] font-semibold leading-none text-primary">
           Reviews

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="bg-secondary flex justify-between px-6 py-1">
+  <CommonContainer bg="secondary">
+    <div class="flex justify-between">
       <div class="w-[50%] flex items-center">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -62,7 +62,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </CommonContainer>
 </template>
 <script>
 export default {

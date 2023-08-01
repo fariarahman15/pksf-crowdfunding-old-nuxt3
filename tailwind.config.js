@@ -29,4 +29,6 @@ module.exports = {
     },
   },
   plugins: [require("daisyui")],
+
+  safelist: ["bg-secondary", "bg-primary"],
 };

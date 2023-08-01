@@ -5,6 +5,7 @@
     <LandingPageBanner />
     <LandingPageCardGroup />
     <LandingPageCardGroup2 />
+    <LandingPagePayment />
     <LandingPageFooter />
   </div>
 </template>
