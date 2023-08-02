@@ -11,11 +11,12 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: "430px",
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
+        xs: "330px", //small phone
+        sm: "480px", //large phone
+        md: "768px", //tab, ipad
+        lg: "1024px", //small laptop
+        xl: "1280px", //large laptop
+        "2xl": "1536px", //desktop
       },
 
       colors: {

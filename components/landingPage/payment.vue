@@ -1,25 +1,23 @@
 <template>
   <CommonContainer>
-    <div><h3 class="text-[24px] font-medium">Pay With</h3></div>
-    <div>
-      <div>
-        <div>
-          <img
-            v-for="image in images"
-            :key="image"
-            class="w-[100px] h-[100px]"
-            :src="images"
-            alt=""
-          />
-          <img
-            class="w-[100px] h-[100px]"
-            src="~/public/paymentLogo/image 1.png"
-            alt=""
-          />
-        </div>
+    <section class="px-6 lg:grid lg:grid-cols-12 items-center divide-x-2">
+      <div class="text-center">
+        <h3 class="text-lg font-medium">Pay With</h3>
       </div>
-    </div>
-    <div></div>
+
+      <div class="col-span-10">
+        <LandingPagePaymentLogo />
+      </div>
+
+      <div class="px-2">
+        <h3 class="text-sm font-medium">Varified by</h3>
+        <img
+          class="max-w-[125px] lg:max-w-[100px] h-[50px]"
+          src="~/public/paymentLogo/image_23.png"
+          alt=""
+        />
+      </div>
+    </section>
   </CommonContainer>
 </template>
 
@@ -33,16 +31,6 @@ export default {
     shadow: { type: Boolean, default: false },
     rounded: { type: Boolean, default: false },
     bg: { type: String, default: "" },
-  },
-
-  data() {
-    return {
-      images: [
-        "~/public/paymentLogo/image 1.png",
-        "~/public/paymentLogo/image 2.png",
-        "~/public/paymentLogo/image 3.png",
-      ],
-    };
   },
 };
 </script>
