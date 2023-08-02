@@ -8,11 +8,11 @@
 
         <div class="flex">
           <div class="w-full">
-            <div class="form-control rounded-full p-0">
+            <div class="form-control rounded-full p-0 bg-white">
               <input
                 type="text"
                 placeholder="Search"
-                class="input input-bordered w-24 md:w-auto rounded-full"
+                class="input input-bordered w-24 md:w-auto rounded-full bg-white"
               />
             </div>
           </div>

@@ -1,5 +1,5 @@
 <template>
-  <CommonContainer>
+  <CommonContainer bg="white">
     <section class="px-6 lg:grid lg:grid-cols-12 items-center divide-x-2">
       <div class="text-center">
         <h3 class="text-lg font-medium">Pay With</h3>

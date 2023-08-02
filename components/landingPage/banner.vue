@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CommonContainer class="py-10">
+    <CommonContainer bg="white" class="py-10">
       <div class="bg-secondary rounded-[20px] border mx-6">
         <section class="grid grid-cols-2 px-6 py-12 items-center">
           <div class="w-[90%]">
