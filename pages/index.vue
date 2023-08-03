@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LandingPageNavbar />
+    <LandingPageNavbar bg="secondary" />
     <LandingPageJumbotron />
     <LandingPageBanner />
     <LandingPageBannerTwo />

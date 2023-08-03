@@ -1,25 +1,17 @@
 <template>
-  <CommonContainer bg="primary" class="py-8"
-    ><section class="grid grid-cols-2 px-6 items-center">
-      <div class="w-[70%]">
-        <h1 class="text-[44px] text-white font-semibold mb-3">
+  <CommonContainer :class="[bgClass]"
+    ><section
+      class="grid grid-cols-1 md:grid-cols-2 justify-items-center md:justify-items-start items-center gap-2"
+      :class="[padding, textClass]"
+    >
+      <div class="w-full md:w-[90%]">
+        <h1
+          class="mb-3 text-white text-2xl sm:text-3xl md:text-4xl font-semibold text-center md:text-start lg:w-[80%]"
+        >
           Exploring Innovative Funding Ideas
         </h1>
 
-        <div class="flex">
-          <div class="w-full">
-            <div class="form-control rounded-full p-0">
-              <input
-                type="text"
-                placeholder="Search"
-                class="input input-bordered w-24 md:w-auto rounded-full"
-              />
-            </div>
-          </div>
-          <button class="-m-7 p-0">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
+        <CommonSearchInput />
       </div>
 
       <div>
@@ -31,3 +23,25 @@
     </section>
   </CommonContainer>
 </template>
+
+<script>
+export default {
+  name: "Jumbotron",
+  props: {
+    padding: { type: String, default: "px-0 py-0" },
+    border: { type: String, default: "border-none" },
+    shadow: { type: String, default: "shadow-none" },
+    rounded: { type: String, default: "rounded-none" },
+    bg: { type: String, default: "white" },
+    text: { type: String, default: "black" },
+  },
+  computed: {
+    bgClass() {
+      return this.bg ? `bg-${this.bg}` : "";
+    },
+    textClass() {
+      return this.text ? `text-${this.text}` : "";
+    },
+  },
+};
+</script>

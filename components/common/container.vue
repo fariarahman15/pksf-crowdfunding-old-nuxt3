@@ -1,14 +1,5 @@
 <template>
-  <div
-    :class="[
-      margin ? '' : 'mx-0 my-0',
-      padding ? '' : 'px-6 py-1',
-      border ? '' : 'border-none',
-      shadow ? '' : 'shadow-none',
-      rounded ? '' : 'rounded-none',
-      bgClass,
-    ]"
-  >
+  <div :class="[margin, padding, border, shadow, rounded, bgClass]">
     <slot />
   </div>
 </template>
@@ -17,11 +8,11 @@
 export default {
   name: "Container",
   props: {
-    margin: { type: Boolean, default: false },
-    padding: { type: Boolean, default: false },
-    border: { type: Boolean, default: false },
-    shadow: { type: Boolean, default: false },
-    rounded: { type: Boolean, default: false },
+    margin: { type: String, default: "mx-0 my-0" },
+    padding: { type: String, default: "px-6 py-1" },
+    border: { type: String, default: "border-none" },
+    shadow: { type: String, default: "shadow-none" },
+    rounded: { type: String, default: "rounded-none" },
     bg: { type: String, default: "" },
   },
   computed: {

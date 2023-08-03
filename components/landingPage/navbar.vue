@@ -1,6 +1,9 @@
 <template>
-  <CommonContainer bg="secondary">
-    <div class="flex justify-between">
+  <CommonContainer :class="[bgClass]">
+    <div
+      :class="[margin, padding, border, shadow, rounded, bgClass, textClass]"
+      class="flex justify-between"
+    >
       <div class="w-[50%] flex items-center">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -68,15 +71,20 @@
 export default {
   name: "NavBar",
   props: {
-    padding: { type: Boolean, default: false },
-    shadow: { type: Boolean, default: false },
-    bold: { type: Boolean, default: true },
-    rounded: { type: String, default: "rounded " },
-    bg: { type: String, default: "" },
+    margin: { type: String, default: "mx-0 my-0" },
+    padding: { type: String, default: "px-0 py-0" },
+    border: { type: String, default: "border-none" },
+    shadow: { type: String, default: "shadow-none" },
+    rounded: { type: String, default: "rounded-none" },
+    bg: { type: String, default: "white" },
+    text: { type: String, default: "black" },
   },
   computed: {
     bgClass() {
       return this.bg ? `bg-${this.bg}` : "";
+    },
+    textClass() {
+      return this.text ? `text-${this.text}` : "";
     },
   },
 };

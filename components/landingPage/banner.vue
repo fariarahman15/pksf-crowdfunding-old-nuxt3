@@ -1,8 +1,10 @@
 <template>
   <div>
-    <CommonContainer class="py-10">
-      <div class="bg-secondary rounded-[20px] border mx-6">
-        <section class="grid grid-cols-2 px-6 py-12 items-center">
+    <CommonContainer :class="[bgClass]">
+      <div class="" :class="[padding, textClass]">
+        <section
+          class="grid grid-cols-2 px-6 py-6 items-center rounded-[20px] border bg-secondary"
+        >
           <div class="w-[90%]">
             <h1 class="text-[40px] text-primary font-semibold mb-3">
               See how the platform works
@@ -33,3 +35,25 @@
     </CommonContainer>
   </div>
 </template>
+
+<script>
+export default {
+  name: "Banner",
+  props: {
+    padding: { type: String, default: "px-0 py-0" },
+    border: { type: String, default: "border-none" },
+    shadow: { type: String, default: "shadow-none" },
+    rounded: { type: String, default: "rounded-none" },
+    bg: { type: String, default: "white" },
+    text: { type: String, default: "black" },
+  },
+  computed: {
+    bgClass() {
+      return this.bg ? `bg-${this.bg}` : "";
+    },
+    textClass() {
+      return this.text ? `text-${this.text}` : "";
+    },
+  },
+};
+</script>
