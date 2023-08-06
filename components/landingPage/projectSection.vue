@@ -1,7 +1,7 @@
 <template>
   <div>
     <CommonContainer :class="[bgClass]">
-      <section :class="[padding, textClass]">
+      <section :class="[padding, textClass]" class="space-y-2">
         <div
           class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 py-2"
         >
@@ -16,11 +16,6 @@
           >
         </div>
 
-        <div
-          class="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5"
-        >
-          <!-- <LandingPageProjectCard /> -->
-        </div>
         <LandingPageProjectCardGroup />
       </section>
     </CommonContainer>
@@ -29,7 +24,7 @@
 
 <script>
 export default {
-  name: "CardGroup",
+  name: "ProjectSection",
   props: {
     padding: { type: String, default: "px-0 py-0" },
     border: { type: String, default: "border-none" },

@@ -3,7 +3,7 @@
     <CommonContainer :class="[bgClass]">
       <div class="space-y-2" :class="[padding, textClass]">
         <h5 class="text-[30px] font-semibold leading-none text-primary py-2">
-          Reviews
+          {{ sectionTitle }}
         </h5>
 
         <section class="grid grid-cols-2 gap-5 pb-4">
@@ -25,6 +25,11 @@ export default {
     rounded: { type: String, default: "rounded-none" },
     bg: { type: String, default: "white" },
     text: { type: String, default: "black" },
+
+    sectionTitle: {
+      type: String,
+      default: "",
+    },
   },
   computed: {
     bgClass() {

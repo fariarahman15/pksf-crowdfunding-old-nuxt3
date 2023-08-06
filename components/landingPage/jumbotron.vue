@@ -14,7 +14,7 @@
         <CommonSearchInput />
       </div>
 
-      <div>
+      <div class="w-full">
         <img
           src="https://images.pexels.com/photos/2407634/pexels-photo-2407634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           class="w-full rounded-lg shadow-2xl max-h-[350px]"
