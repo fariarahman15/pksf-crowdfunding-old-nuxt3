@@ -13,7 +13,8 @@
       padding="px-6 py-4"
       sectionTitle="Reviews"
     />
-    <LandingPagePayment />
-    <LandingPageFooter />
+    <LandingPagePaymentSection padding="px-6 py-4" />
+
+    <LandingPageFooter bg="primary" padding="px-6 py-8" />
   </div>
 </template>

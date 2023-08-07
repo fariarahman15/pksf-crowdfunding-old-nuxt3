@@ -1,18 +1,20 @@
 <template>
   <CommonContainer bg="white">
-    <section class="px-6 lg:grid lg:grid-cols-12 items-center divide-x-2">
-      <div class="text-center">
-        <h3 class="text-lg font-medium">Pay With</h3>
+    <section
+      class="lg:grid lg:grid-cols-10 content-center items-center divide-x-2"
+      :class="[padding]"
+    >
+      <div class="col-span-8">
+        <div class="text-start">
+          <h3 class="text-lg font-medium">Pay With</h3>
+        </div>
+        <LandingPagePaymentLogo padding="pl-0 pr-3" />
       </div>
 
-      <div class="col-span-10">
-        <LandingPagePaymentLogo />
-      </div>
-
-      <div class="px-2">
+      <div class="px-2 col-span-2">
         <h3 class="text-sm font-medium">Varified by</h3>
         <img
-          class="max-w-[125px] lg:max-w-[100px] h-[50px]"
+          class="max-w-[125px] lg:max-w-[100px] min-h-[35px]"
           src="~/public/paymentLogo/image_23.png"
           alt=""
         />

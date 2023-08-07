@@ -1,9 +1,9 @@
 <template>
-  <div class="px-3 flex flex-wrap justify-items-start">
+  <div class="flex flex-wrap justify-start gap-1" :class="[padding]">
     <img
       v-for="image in images"
       :key="image"
-      class="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] xl:w-[70px] xl:h-[70px] flex items-center justify-center"
+      class="basis-[9.0909%] max-w-[50px] max-h-[50px] lg:max-w-[60px] lg:max-h-[60px] 2xl:max-w-[70px] 2xl:max-h-[70px] flex items-center justify-center"
       :src="`./_nuxt/public/paymentLogo/${image}`"
       alt=""
     />
@@ -13,6 +13,23 @@
 <script>
 export default {
   name: "paymentLogo",
+
+  props: {
+    padding: { type: String, default: "px-0 py-0" },
+    border: { type: String, default: "border-none" },
+    shadow: { type: String, default: "shadow-none" },
+    rounded: { type: String, default: "rounded-none" },
+    bg: { type: String, default: "white" },
+    text: { type: String, default: "black" },
+  },
+  computed: {
+    bgClass() {
+      return this.bg ? `bg-${this.bg}` : "";
+    },
+    textClass() {
+      return this.text ? `text-${this.text}` : "";
+    },
+  },
 
   data() {
     return {

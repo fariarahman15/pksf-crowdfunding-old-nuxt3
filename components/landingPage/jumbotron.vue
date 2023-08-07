@@ -1,7 +1,7 @@
 <template>
   <CommonContainer :class="[bgClass]"
     ><section
-      class="grid grid-cols-1 md:grid-cols-2 justify-items-center md:justify-items-start items-center gap-2"
+      class="grid grid-cols-1 sm:grid-cols-2 justify-items-center md:justify-items-start items-center gap-2"
       :class="[padding, textClass]"
     >
       <div class="w-full md:w-[90%]">

@@ -1,6 +1,9 @@
 <template>
-  <CommonContainer bg="primary" class="py-8">
-    <section class="grid grid-cols-2 text-white px-6 py-8 gap-x-6">
+  <CommonContainer :class="[bgClass]">
+    <section
+      class="grid grid-col-1 sm:grid-cols-2 text-white gap-x-6"
+      :class="[padding, textClass]"
+    >
       <div class="p-2">
         <img
           class="w-[250px]"
@@ -68,5 +71,27 @@
       </div></section
   ></CommonContainer>
 </template>
+
+<script>
+export default {
+  name: "Footer",
+  props: {
+    padding: { type: String, default: "px-0 py-0" },
+    border: { type: String, default: "border-none" },
+    shadow: { type: String, default: "shadow-none" },
+    rounded: { type: String, default: "rounded-none" },
+    bg: { type: String, default: "white" },
+    text: { type: String, default: "black" },
+  },
+  computed: {
+    bgClass() {
+      return this.bg ? `bg-${this.bg}` : "";
+    },
+    textClass() {
+      return this.text ? `text-${this.text}` : "";
+    },
+  },
+};
+</script>
 
 <style scoped></style>

@@ -6,7 +6,7 @@
           {{ sectionTitle }}
         </h5>
 
-        <section class="grid grid-cols-2 gap-5 pb-4">
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-5 pb-4">
           <LandingPageCardReview />
           <LandingPageCardReview />
         </section>
