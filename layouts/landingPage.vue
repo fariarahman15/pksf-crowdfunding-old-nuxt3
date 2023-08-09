@@ -1,13 +1,15 @@
 <template>
   <div class="mx-auto">
-    <slot />
+    <LandingPageNavbar />
+
+    <section>
+      <slot />
+    </section>
   </div>
 </template>
 
-<script setup lang="js">
-
-useHead({
-  title: "Login | Admin Panel ",})
+<script>
+export default {
+  name: "landingPage",
+};
 </script>
-
-<style scoped></style>

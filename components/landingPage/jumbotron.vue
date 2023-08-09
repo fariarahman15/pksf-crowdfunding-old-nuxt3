@@ -1,8 +1,7 @@
 <template>
-  <CommonContainer :class="[bgClass]"
+  <CommonContainer background="bg-primary" class=""
     ><section
-      class="grid grid-cols-1 sm:grid-cols-2 justify-items-center md:justify-items-start items-center gap-2"
-      :class="[padding, textClass]"
+      class="grid grid-cols-1 sm:grid-cols-2 justify-items-center md:justify-items-start items-center gap-2 px-2 py-4 md:px-6 md:py-8"
     >
       <div class="w-full md:w-[90%]">
         <h1
@@ -27,21 +26,5 @@
 <script>
 export default {
   name: "Jumbotron",
-  props: {
-    padding: { type: String, default: "px-0 py-0" },
-    border: { type: String, default: "border-none" },
-    shadow: { type: String, default: "shadow-none" },
-    rounded: { type: String, default: "rounded-none" },
-    bg: { type: String, default: "white" },
-    text: { type: String, default: "black" },
-  },
-  computed: {
-    bgClass() {
-      return this.bg ? `bg-${this.bg}` : "";
-    },
-    textClass() {
-      return this.text ? `text-${this.text}` : "";
-    },
-  },
 };
 </script>

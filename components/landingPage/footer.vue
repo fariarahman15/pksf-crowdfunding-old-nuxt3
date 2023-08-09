@@ -1,8 +1,7 @@
 <template>
-  <CommonContainer :class="[bgClass]">
+  <CommonContainer background="bg-primary">
     <section
-      class="grid grid-col-1 sm:grid-cols-2 text-white gap-x-6"
-      :class="[padding, textClass]"
+      class="grid grid-col-1 sm:grid-cols-2 text-white gap-x-6 px-2 py-4 md:px-6 md:py-8"
     >
       <div class="p-2">
         <img
@@ -59,7 +58,9 @@
     </section>
 
     <section>
-      <div class="flex justify-between items-center px-6 bg-primary text-white">
+      <div
+        class="flex justify-between items-center px-2 md:px-6 bg-primary text-white"
+      >
         <div class="p-2">
           <p class="font-thin">Copyright © 2023 - All right reserved</p>
         </div>
@@ -75,22 +76,6 @@
 <script>
 export default {
   name: "Footer",
-  props: {
-    padding: { type: String, default: "px-0 py-0" },
-    border: { type: String, default: "border-none" },
-    shadow: { type: String, default: "shadow-none" },
-    rounded: { type: String, default: "rounded-none" },
-    bg: { type: String, default: "white" },
-    text: { type: String, default: "black" },
-  },
-  computed: {
-    bgClass() {
-      return this.bg ? `bg-${this.bg}` : "";
-    },
-    textClass() {
-      return this.text ? `text-${this.text}` : "";
-    },
-  },
 };
 </script>
 
