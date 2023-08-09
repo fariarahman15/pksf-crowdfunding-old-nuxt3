@@ -20,7 +20,7 @@ useHead({
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
       <img
-        src="/images/vumi_logo.png"
+        src="/public/images/logo_pksf.png"
         alt="AdminLTE Logo"
         class="brand-image img-circle elevation-3"
         style="opacity: 0.8"
@@ -33,7 +33,7 @@ useHead({
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img
-            src="/images/vumi_logo.png"
+            src="/public/images/logo_pksf.png"
             class="img-circle elevation-2"
             alt="User Image"
           />
