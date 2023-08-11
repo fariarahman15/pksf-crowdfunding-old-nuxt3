@@ -5,7 +5,7 @@
         <input
           type="search"
           class="block p-2.5 w-full text-sm text-black rounded-l-full outline-none focus:ring-accent focus:border-accent"
-          placeholder="Search..."
+          :placeholder="placeholder"
         />
         <span>
           <button
@@ -23,5 +23,8 @@
 <script>
 export default {
   name: "SearchInput",
+  props: {
+    placeholder: { type: String, default: "Search..." },
+  },
 };
 </script>

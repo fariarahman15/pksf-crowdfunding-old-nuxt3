@@ -42,22 +42,27 @@ export default {
       type: String,
       default: "",
     },
+
+    projects: {
+      type: Object,
+      default: () => {},
+    },
   },
 
-  data() {
-    return {
-      projects: [
-        {
-          id: 1,
-          percentage: "25%",
-          projectImage: "_nuxt/public/images/demo_projectImage.png",
-          title: "Noteworthy technology acquisitions 2021",
-          profileImage: "_nuxt/public/images/demo_userImage.png",
-          name: "Sample Name 1",
-          occupation: "Entrepreneur",
-        },
-      ],
-    };
-  },
+  // data() {
+  //   return {
+  //     projects: [
+  //       {
+  //         id: 1,
+  //         percentage: "25%",
+  //         projectImage: "_nuxt/public/images/demo_projectImage.png",
+  //         title: "Noteworthy technology acquisitions 2021",
+  //         profileImage: "_nuxt/public/images/demo_userImage.png",
+  //         name: "Sample Name 1",
+  //         occupation: "Entrepreneur",
+  //       },
+  //     ],
+  //   };
+  // },
 };
 </script>

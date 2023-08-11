@@ -1,21 +1,13 @@
 <template>
   <div>
-    <LandingPageNavbar bg="secondary" text="black" />
-    <LandingPageJumbotron bg="primary" padding="px-6 py-8" />
-    <LandingPageBanner padding="px-6 py-8 " />
-    <LandingPageProjectSection
-      bg="white"
-      padding="px-6 py-4"
-      sectionTitle="To Whom You May Invest?"
-    />
-    <LandingPageReviewSection
-      bg="secondary"
-      padding="px-6 py-4"
-      sectionTitle="Reviews"
-    />
-    <LandingPagePaymentSection padding="px-6 py-4" />
+    <LandingPageNavbar />
+    <LandingPageJumbotron />
+    <LandingPageBanner />
+    <LandingPageProjectSection sectionTitle="To Whom You May Invest?" />
+    <LandingPageReviewSection sectionTitle="Reviews" />
+    <LandingPagePaymentSection />
 
-    <LandingPageFooter bg="primary" padding="px-6 py-8" />
+    <LandingPageFooter />
   </div>
 </template>
 
