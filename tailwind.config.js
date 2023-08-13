@@ -9,6 +9,13 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
+    listStyleType: {
+      none: "none",
+      disc: "disc",
+      decimal: "decimal",
+      square: "square",
+      roman: "upper-roman",
+    },
     extend: {
       screens: {
         xs: "330px", //small phone
