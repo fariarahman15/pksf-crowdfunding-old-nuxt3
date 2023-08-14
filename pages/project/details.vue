@@ -33,22 +33,33 @@
           </div>
           <div class="">
             <div
-              class="text-sm font-medium text-center text-gray-500 border-b border-gray-200"
+              class="text-sm font-medium text-center text-black border-b border-gray-200"
             >
               <ul class="flex flex-wrap -mb-px">
                 <li class="mr-2">
-                  <a
+                  <!-- <a
                     href="#"
-                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-accent hover:border-accent active:text-accent focus:text-accent active:border-accent focus:border-accent"
                     >Idea Details</a
+                  > -->
+                  <nuxt-link
+                    to=""
+                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-accent hover:border-accent active:text-accent focus:text-accent active:border-accent focus:border-accent"
+                    >Idea Details</nuxt-link
                   >
                 </li>
                 <li class="mr-2">
-                  <a
+                  <!-- <a
                     href="#"
-                    class="inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active"
+                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-accent hover:border-accent active:text-accent focus:text-accent active:border-accent focus:border-accent"
                     aria-current="page"
                     >Feedback & Comments</a
+                  > -->
+
+                  <nuxt-link
+                    to=""
+                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-accent hover:border-accent active:text-accent focus:text-accent active:border-accent focus:border-accent"
+                    >Feedback & Comments</nuxt-link
                   >
                 </li>
               </ul>
@@ -75,6 +86,8 @@
         </div></CommonContainer
       >
     </section>
+
+    <LandingPagePaymentSection />
     <LandingPageFooter />
   </div>
 </template>
