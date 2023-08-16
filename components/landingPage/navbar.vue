@@ -118,7 +118,7 @@
             </label>
             <ul
               tabindex="0"
-              class="menu dropdown-content mt-3 z-[1] p-2 shadow-sm bg-base-100 rounded-box min-h-max"
+              class="menu dropdown-content mt-3 z-[1] p-2 shadow-sm bg-base-100 rounded-box min-w-max"
             >
               <li><a> About FundwithPKSF</a></li>
               <li><a>About PKSF</a></li>
@@ -141,7 +141,7 @@
             </label>
             <ul
               tabindex="1"
-              class="menu dropdown-content mt-3 z-[1] p-2 shadow-sm bg-base-100 rounded-box min-h-max"
+              class="menu dropdown-content mt-3 z-[1] p-2 shadow-sm bg-base-100 rounded-box min-w-max"
             >
               <li><a>How FundwithPKSF will work? </a></li>
               <li><a>What is Crowdfunding? </a></li>
@@ -167,7 +167,7 @@
             </label>
             <ul
               tabindex="3"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-sm bg-base-100 rounded-box min-h-max"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-sm bg-base-100 rounded-box min-w-max"
             >
               <li>
                 <a class="text-accent font-bold">Sub-projects</a>
