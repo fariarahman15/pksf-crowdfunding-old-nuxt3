@@ -29,7 +29,7 @@
             </span>
             <img
               class="w-full"
-              src="~/public/images/demo_projectImage.png"
+              src="~/public/images/demo_projectImage_1.png"
               alt=""
             />
           </div>
@@ -103,7 +103,7 @@
               </span>
               <img
                 class="rounded-t-lg"
-                src="~/public/images/demo_projectImage.png"
+                src="~/public/images/demo_projectImage_2.png"
                 alt=""
               />
             </a>
@@ -150,7 +150,7 @@
               </span>
               <img
                 class="rounded-t-lg"
-                src="~/public/images/demo_projectImage.png"
+                src="~/public/images/demo_projectImage_3.png"
                 alt=""
               />
             </a>

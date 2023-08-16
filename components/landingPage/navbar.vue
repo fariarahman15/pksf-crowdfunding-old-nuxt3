@@ -103,9 +103,9 @@
           </ul>
         </div>
 
-        <a class="normal-case text-xl cursor-pointer"
+        <nuxt-link to="/" class="normal-case text-xl cursor-pointer"
           ><img class="w-[250px]" src="~/public/images/logo_pksf.png" alt=""
-        /></a>
+        /></nuxt-link>
       </div>
 
       <div class="w-[50%] flex justify-end lg:justify-between gap-5">

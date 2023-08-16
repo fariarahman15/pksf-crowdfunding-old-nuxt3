@@ -15,7 +15,7 @@
       </a>
       <div class="p-3">
         <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 whitespace-normal truncate min-h-16 max-h-16">
             Noteworthy technology acquisitions 2021
           </h5>
         </a>
@@ -45,19 +45,21 @@
     </div> -->
 
     <div
-      class="max-w-full min-h-max bg-white border border-gray-200 rounded-lg shadow"
+      class="max-w-full min-h-full bg-white border border-gray-200 rounded-lg shadow"
     >
-      <a href="#" class="relative">
+      <div href="#" class="relative">
         <span
           class="z-10 absolute right-0 inline-flex items-center justify-center h-10 w-10 p-2 m-2 text-base font-semibold text-white bg-[#119CCA] rounded-full"
         >
           <span>{{ percentage }}</span>
         </span>
         <img class="rounded-t-lg" :src="projectImage" alt="Image" />
-      </a>
+      </div>
       <div class="p-3">
         <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <h5
+            class="mb-2 text-2xl font-bold text-gray-900 whitespace-normal truncate min-h-16 max-h-16"
+          >
             {{ title }}
           </h5>
         </a>
