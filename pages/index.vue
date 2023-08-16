@@ -15,11 +15,11 @@
 </template>
 
 <script setup>
-{
-  definePageMeta({
-    layout: "landingPage",
-  });
-}
+useHead({
+  title: "Fund With PKSF",
+  link: [{ rel: "icon", type: "image/png", href: "/favicon_pksf.png" }],
+});
+
 const projects = [
   {
     id: 1,

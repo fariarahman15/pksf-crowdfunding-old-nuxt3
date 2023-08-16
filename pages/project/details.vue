@@ -195,16 +195,16 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ProjectSection",
+<script setup>
+useHead({
+  title: "Project Details",
+  link: [{ rel: "icon", type: "image/png", href: "/favicon_pksf.png" }],
   props: {
     sectionTitle: {
       type: String,
       default: "",
     },
   },
-
   data() {
     return {
       projects: [
@@ -220,5 +220,5 @@ export default {
       ],
     };
   },
-};
+});
 </script>

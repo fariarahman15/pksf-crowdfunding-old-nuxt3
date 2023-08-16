@@ -60,7 +60,6 @@ export default defineNuxtConfig({
       ],
 
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/img/favicon.png" },
         {
           rel: "stylesheet",
           type: "text/css",
