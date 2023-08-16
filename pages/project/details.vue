@@ -2,13 +2,15 @@
   <div>
     <LandingPageNavbar />
 
-    <CommonContainer class="flex gap-4 py-4">
-      <section class="w-2/3">
+    <CommonContainer class="sm:flex gap-4 py-4 space-y-4 sm:space-y-0">
+      <section class="md:w-2/3">
         <div
           class="p-4 max-w-full bg-white border border-gray-200 rounded-lg shadow space-y-2"
         >
           <div>
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">
+            <h5
+              class="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-black"
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s.
@@ -70,7 +72,7 @@
             </ol>
           </div>
 
-          <div class="flex justify-between gap-3">
+          <div class="sm:flex justify-between gap-3">
             <CommonCard background="bg-accent" class="text-white p-3">
               <h5 class="text-sm font-semibold">Estimated Fund Needed</h5>
               <h3 class="text-2xl font-bold">৳<span>15,41,241</span></h3>
@@ -87,7 +89,7 @@
         </div>
       </section>
 
-      <section class="w-1/3 space-y-2">
+      <section class="md:w-1/3 space-y-2">
         <h1 class="text-lg font-bold">Similar Projects</h1>
         <div class="grid xs:grid-cols-1 gap-5">
           <div
