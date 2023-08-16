@@ -1,14 +1,17 @@
 <template>
-  <CommonContainer background="bg-secondary">
+  <CommonContainer background="bg-secondary" padding="px-0 md:px-6 py-1">
     <div class="flex justify-between">
       <div class="w-[50%] flex items-center">
         <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <label
+            tabindex="0"
+            class="px-3 text-primary font-semibold whitespace-nowrap hover:text-accent active:text-accent focus:text-accent hover:font-bold active:font-bold focus:font-bold hover:underline active:underline focus:underline lg:hidden"
+          >
             <i class="fa-solid fa-bars"></i>
           </label>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-r"
           >
             <li>
               <details>
@@ -107,64 +110,15 @@
 
       <div class="w-[50%] flex justify-end lg:justify-between gap-5">
         <div class="hidden lg:flex items-center space-x-10">
-          <!-- <a class="link link-hover p-2">About us</a>
-          <a class="link link-hover p-2">How it works</a>
-          <a class="link link-hover p-2">Projects</a> -->
-
-          <!-- <ul class="menu menu-horizontal px-1">
-            <li tabindex="0">
-              <details>
-                <summary>About us</summary>
-                <ul class="p-2">
-                  <li><a>About FundwithPKSF</a></li>
-                  <li><a>About PKSF</a></li>
-                  <li>
-                    <a>Rural Microenterprise Transformation Project (RMTP) </a>
-                  </li>
-                  <li><a>Partner Organizations (POs) </a></li>
-                  <li><a>Success stories </a></li>
-                  <li><a>FAQs </a></li>
-                  <li><a>Podcasts </a></li>
-                  <li><a>Contact us</a></li>
-                </ul>
-              </details>
-            </li>
-            <li tabindex="0">
-              <details>
-                <summary>How it works</summary>
-                <ul class="p-2">
-                  <li><a>a. How FundwithPKSF will work? </a></li>
-                  <li><a>b. What is Crowdfunding? </a></li>
-                  <li>
-                    <a>c. How Microfinance helps? </a>
-                  </li>
-                  <li><a>d. How Grants work? </a></li>
-                  <li><a>e. How Debt financing work? </a></li>
-                  <li>
-                    <a>f. How Equity investment work? </a>
-                  </li>
-                  <li>
-                    <a> g. Potential Enterprises of RMTP </a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li tabindex="0">
-              <details>
-                <summary>Projects</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-          </ul> -->
-
           <div class="dropdown">
-            <label tabindex="0" class="whitespace-nowrap">About us </label>
+            <label
+              tabindex="0"
+              class="text-primary font-semibold whitespace-nowrap hover:text-accent active:text-accent focus:text-accent hover:font-bold active:font-bold focus:font-bold hover:underline active:underline focus:underline"
+              >About us
+            </label>
             <ul
               tabindex="0"
-              class="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box"
+              class="menu dropdown-content mt-3 z-[1] p-2 shadow-sm bg-base-100 rounded-box min-h-max"
             >
               <li><a> About FundwithPKSF</a></li>
               <li><a>About PKSF</a></li>
@@ -180,10 +134,14 @@
           </div>
 
           <div class="dropdown">
-            <label tabindex="1" class="whitespace-nowrap">How it works </label>
+            <label
+              tabindex="1"
+              class="text-primary font-semibold whitespace-nowrap hover:text-accent active:text-accent focus:text-accent hover:font-bold active:font-bold focus:font-bold hover:underline active:underline focus:underline"
+              >How it works
+            </label>
             <ul
               tabindex="1"
-              class="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box"
+              class="menu dropdown-content mt-3 z-[1] p-2 shadow-sm bg-base-100 rounded-box min-h-max"
             >
               <li><a>How FundwithPKSF will work? </a></li>
               <li><a>What is Crowdfunding? </a></li>
@@ -202,10 +160,14 @@
           </div>
 
           <div class="dropdown">
-            <label tabindex="3" class="whitespace-nowrap">Projects </label>
+            <label
+              tabindex="3"
+              class="text-primary font-semibold whitespace-nowrap hover:text-accent active:text-accent focus:text-accent hover:font-bold active:font-bold focus:font-bold hover:underline active:underline focus:underline"
+              >Projects
+            </label>
             <ul
               tabindex="3"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-sm bg-base-100 rounded-box min-h-max"
             >
               <li>
                 <a class="text-accent font-bold">Sub-projects</a>
@@ -248,7 +210,11 @@
         </div>
 
         <div class="flex items-center">
-          <a href="" class="link link-hover p-2">Login</a>
+          <a
+            href=""
+            class="p-2 text-primary font-semibold whitespace-nowrap hover:text-accent active:text-accent focus:text-accent hover:font-bold active:font-bold focus:font-bold hover:underline active:underline focus:underline"
+            >Login</a
+          >
           <div class="dropdown dropdown-end">
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
               <div class="w-10 rounded-full">
