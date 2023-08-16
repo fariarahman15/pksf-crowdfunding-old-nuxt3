@@ -36,7 +36,7 @@
           </div>
           <a
             href="#"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#02AC57] rounded-lg hover:bg-[#28A742] focus:ring-2 focus:outline-none focus:ring-green-300"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#02AC57] rounded-lg hover:bg-[#28A742] focus:ring-2 focus:outline-none focus:ring-green"
           >
             Details
           </a>
@@ -74,12 +74,13 @@
             <p class="text-sm font-medium text-gray-900 truncate">{{ name }}</p>
             <p class="text-sm text-gray-500 truncate">{{ occupation }}</p>
           </div>
-          <a
-            href="#"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#02AC57] rounded-lg hover:bg-[#28A742] focus:ring-2 focus:outline-none focus:ring-green-300"
+
+          <nuxt-link
+            to="/project/details"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#02AC57] rounded-lg hover:bg-[#28A742] focus:ring-2 focus:outline-none focus:ring-green"
           >
-            Details
-          </a>
+            Details</nuxt-link
+          >
         </div>
       </div>
     </div>
