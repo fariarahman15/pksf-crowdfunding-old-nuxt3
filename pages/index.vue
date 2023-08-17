@@ -7,7 +7,6 @@
       sectionTitle="To Whom You May Invest?"
       :projects="projects"
     />
-    at , ! sed asperiores illum, veniam, .
 
     <LandingPageReviewSection sectionTitle="Reviews" />
     <LandingPagePaymentSection />
