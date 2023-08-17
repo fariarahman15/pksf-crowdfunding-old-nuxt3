@@ -6,7 +6,7 @@
       <div class="p-2">
         <img
           class="w-[250px]"
-          src="~/public/images/logo_pksf_white.png"
+          src="~/public/logos/logo_pksf_white.png"
           alt=""
         />
         <p>

@@ -42,7 +42,7 @@
                 class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-3"
               >
                 <img
-                  src="~/public/images/logo_pksf.png"
+                  src="~/public/logos/logo_pksf.png"
                   class="img-fluid mt-sm-4 mt-md-0"
                   alt="add-new-roles"
                   width="83"

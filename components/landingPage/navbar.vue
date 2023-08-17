@@ -104,7 +104,7 @@
         </div>
 
         <nuxt-link to="/" class="normal-case text-xl cursor-pointer"
-          ><img class="w-[250px]" src="~/public/images/logo_pksf.png" alt=""
+          ><img class="w-[250px]" src="~/public/logos/logo_pksf.png" alt=""
         /></nuxt-link>
       </div>
 

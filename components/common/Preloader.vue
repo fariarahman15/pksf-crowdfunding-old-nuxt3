@@ -27,7 +27,7 @@ const { preloader } = defineProps({
   >
     <img
       class="animation__shake"
-      src="/public/images/logo_pksf.png"
+      src="/public/logos/logo_pksf.png"
       alt="AdminLTELogo"
       height="60"
       width="60"
