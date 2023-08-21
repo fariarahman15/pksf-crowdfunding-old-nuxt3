@@ -203,17 +203,19 @@
           </div>
 
           <div class="p-3">
-            <a href="" class="btn btn-sm btn-success rounded-full px-3 py-1"
-              >Join</a
+            <nuxt-link
+              class="btn btn-sm btn-success rounded-full px-3 py-1"
+              to="/register"
+              >Join</nuxt-link
             >
           </div>
         </div>
 
         <div class="flex items-center">
-          <a
-            href=""
+          <nuxt-link
             class="p-2 text-primary font-semibold whitespace-nowrap hover:text-accent active:text-accent focus:text-accent hover:font-bold active:font-bold focus:font-bold hover:underline active:underline focus:underline"
-            >Login</a
+            to="/login"
+            >Login</nuxt-link
           >
           <div class="dropdown dropdown-end">
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
