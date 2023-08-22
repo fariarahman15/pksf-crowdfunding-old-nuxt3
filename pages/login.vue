@@ -12,7 +12,7 @@
               />
             </div>
             <div
-              class="px-6 py-8 bg-[#FEF7C6] rounded-md shadow-md ring-2 ring-gray-800/50 -mt-4 relative z-40"
+              class="px-6 py-8 bg-corn rounded-md shadow-md ring-2 ring-gray-800/50 -mt-4 relative z-40"
             >
               <h1 class="text-2xl font-bold text-start text-primary mb-3">
                 Sign In
