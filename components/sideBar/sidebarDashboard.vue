@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-[300px]">
-    <div class="join join-vertical w-full">
+  <div class="min-w-[300px] max-w-min">
+    <div class="join join-vertical w-full bg-primary text-white rounded-none">
       <div
         class="collapse collapse-arrow join-item border border-base-300"
         v-for="(item, index) in items"

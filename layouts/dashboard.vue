@@ -7,9 +7,11 @@ useHead({
 <template>
   <div>
     <LandingPageNavbar />
-    <SideBarSidebarDashboard />
-    <h1>hello</h1>
-    <slot />
+    <section class="flex">
+      <SideBarSidebarDashboard />
+
+      <slot />
+    </section>
   </div>
 </template>
 
