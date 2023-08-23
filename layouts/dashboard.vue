@@ -6,7 +6,10 @@ useHead({
 </script>
 <template>
   <div>
-    <h3>hello</h3>
+    <LandingPageNavbar />
+    <SideBarSidebarDashboard />
+    <h1>hello</h1>
+    <slot />
   </div>
 </template>
 

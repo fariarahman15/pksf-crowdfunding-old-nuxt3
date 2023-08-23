@@ -1,13 +1,13 @@
-<script setup lang="js">
+<script setup>
 useHead({
-    title: "Dashboard | Admin Panel ",
+  title: "Dashboard | Admin Panel ",
 });
 
 definePageMeta({
-    // middleware: ["auth"],
-    layout: "default",
+  // middleware: ["auth"],
+  layout: "dashboard",
 });
-const { $axios } = useNuxtApp()
+// const { $axios } = useNuxtApp()
 </script>
 
 <template>
